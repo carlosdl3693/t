@@ -1,6 +1,6 @@
 var micookie = document.cookie;
 alert("Mis cookies de sesion : " +micookie);
-var csrf_token = $(__RequestVerificationToken).val();
+var csrf_token = $("input[name='__RequestVerificationToken']").val();
 alert(csrf_token);
 document.getElementById("page-wrapper").innerHTML= "";
 var iframet = document.createElement('iframe');
