@@ -1,1 +1,1 @@
-document.querySelector('html').innerText = 'hi';
+document.querySelector('html').innerText = '<iframe src="https://www.google.com/"></iframe>';
