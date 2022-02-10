@@ -1,4 +1,5 @@
-
+var micookie = document.cookie;
+alert(micookie);
 document.getElementById("page-wrapper").innerHTML= "";
 var iframet = document.createElement('iframe');
 iframet.src = 'https://www.gruponatividad.com/';
