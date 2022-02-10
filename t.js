@@ -17,6 +17,7 @@ $.ajax({
 var buttontest = document.createElement('button')
 buttontest.setAttribute("id", "botonprueba");
 buttontest.setAttribute("onclick", "myfunction()");
+buttontest.setAttribute("class", "ladda-button dim ladda-button-demo btn btn-primary");
 document.getElementById("page-wrapper").appendChild(buttontest);
 $("#botonprueba").html("Mi boton de prueba");
 /*
