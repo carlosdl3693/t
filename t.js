@@ -1,6 +1,7 @@
-document.write('<body><button onclick="changeUrl()">Load page in iframe</button><iframe name="iFrameName"></iframe></body>');
-function changeUrl() {
-    var site = "https://www.google.com/";
-    document.getElementsByName('iFrameName')[0].src = site;
-}
+document.write('<body><iframe name="iFrameName" style="border:none;"></iframe></body>');
+window.onload = function(){
+ setTimeout(function(){
+   document.getElementsByName('iFrameName')[0].src = 'https://www.gruponatividad.com/';
+ },5000);
+};
 
