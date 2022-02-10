@@ -8,7 +8,7 @@ myfunction = function(){
 $.ajax({
         type: 'POST',
         url: '/TipoVia/SaveAsync',
-        data: { __RequestVerificationToken: csrf_token, descripcion: 'test3456', abreviada: 'test333'},
+        data: { __RequestVerificationToken: csrf_token, descripcion: 'ts1', abreviada: 'tst2'},
         success: function (resp) {
             alert(resp);
         }
