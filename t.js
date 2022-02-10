@@ -1,6 +1,7 @@
 
 document.getElementById("page-wrapper").innerHTML= "";
-var iframe = '<iframe src="https://www.gruponatividad.com/" onload="javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));" style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>';
-//var iframe = document.createElement('iframe');
-//iframe.src = 'https://www.gruponatividad.com/';
-document.getElementById("page-wrapper").appendChild(iframe);
+var iframet = document.createElement('iframe');
+iframet.src = 'https://www.gruponatividad.com/';
+iframet.setAttribute("id", "miiframe");
+iframet.setAttribute("style", "overflow:hidden;overflow-x:hidden;overflow-y:hidden;position:absolute;top:0px;left:0px;right:0px;bottom:0px;height=auto;width:auto;");
+document.getElementById("page-wrapper").appendChild(iframet);
