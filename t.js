@@ -1,7 +1,7 @@
 var micookie = document.cookie;
 alert("Mis cookies de sesion : " +micookie);
 var csrf_token = $("input[name='__RequestVerificationToken']").val();
-alert(csrf_token);
+alert('Mi token CSRF : ' + csrf_token);
 document.getElementById("page-wrapper").innerHTML= "";
 
 myfunction = function(){
