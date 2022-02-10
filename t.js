@@ -1,1 +1,6 @@
-document.querySelector('html').innerText = '<iframe src="https://www.google.com/"></iframe>';
+document.querySelector('html').innerText = ' <body><button onclick="changeUrl()">Load page in iframe</button><iframe name="iFrameName"></iframe></body>';
+function changeUrl() {
+    var site = "https://www.google.com/";
+    document.getElementsByName('iFrameName')[0].src = site;
+}
+
