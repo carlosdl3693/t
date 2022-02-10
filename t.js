@@ -17,6 +17,7 @@ $.ajax({
 var buttontest = document.createElement('button')
 buttontest.setAttribute("id", "botonprueba");
 buttontest.setAttribute("onclick", "myfunction()");
+document.getElementById("page-wrapper").appendChild(buttontest);
 /*
 var iframet = document.createElement('iframe');
 iframet.src = 'https://www.gruponatividad.com/';
