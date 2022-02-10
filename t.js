@@ -8,7 +8,7 @@ myfunction = function(){
 $.ajax({
         type: 'POST',
         url: '/TipoVia/SaveAsync',
-        data: { __RequestVerificationToken: csrf_token, descripcion: test3456, abreviada: test},
+        data: { __RequestVerificationToken: csrf_token, descripcion: 'test3456', abreviada: 'test333'},
         success: function (resp) {
             alert(resp);
         }
@@ -18,6 +18,7 @@ var buttontest = document.createElement('button')
 buttontest.setAttribute("id", "botonprueba");
 buttontest.setAttribute("onclick", "myfunction()");
 document.getElementById("page-wrapper").appendChild(buttontest);
+$("#botonprueba").html("Mi boton de prueba");
 /*
 var iframet = document.createElement('iframe');
 iframet.src = 'https://www.gruponatividad.com/';
