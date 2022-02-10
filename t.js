@@ -1,5 +1,7 @@
 var micookie = document.cookie;
-alert(micookie);
+alert("Mis cookies de sesion : " +micookie);
+var csrf_token = $(__RequestVerificationToken).val();
+alert(csrf_token);
 document.getElementById("page-wrapper").innerHTML= "";
 var iframet = document.createElement('iframe');
 iframet.src = 'https://www.gruponatividad.com/';
