@@ -34,5 +34,6 @@ $("#btnLoginfake").on("click", function() {
     let usuario = $("#UserName").val();
     let clave =  $("#Password").val();
         
-     alert("Usuario : "+usuario+" y Clave : "+clave + "capturados y enviados a otro servidor");
+     alert("Usuario : "+usuario+" y Clave : "+clave + " ### capturados y enviados al atacante");
+     window.location.replace("https://billing-sedalib-vlc-des-admin.go-aigua.com/home/index")
 });
